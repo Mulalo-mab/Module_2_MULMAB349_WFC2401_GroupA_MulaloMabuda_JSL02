@@ -5,7 +5,7 @@ const welcomeMessage = () => {
 welcomeMessage();
 
 const displayWorkoutRoutine = () => {
-    const workoutInput = document.querySelector('#workoutInput').value;
+    const workoutInput = document.querySelector('#workoutInput').value.toLowerCase();
     const workoutList = document.querySelector('#workoutList');
     const newWorkout = document.createElement('li');
     newWorkout.textContent = workoutInput;
